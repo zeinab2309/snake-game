@@ -1,7 +1,5 @@
 from random import randint
 from tkinter import *
-import os
-import sys
 
 class Snake:
     def __init__(self):
@@ -85,7 +83,7 @@ def check_game_over(snake):
     return False
 def game_over():
     canvas.delete()
-    canvas.create_text(canvas.winfo_width()/2,canvas.winfo_height()/2,font=("Terminal",60),text="اخ سرم",fill="#DF1A2F",tag="gameover")
+    canvas.create_text(canvas.winfo_width()/2,canvas.winfo_height()/2,font=("Terminal",60),text=" سرم اخ",fill="#DF1A2F",tag="gameover")
 
 def change_direction(new_dir):
     global direction
